@@ -91,9 +91,22 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable>true</executable>
+				</configuration>				
 			</plugin>
 		</plugins>
+		
+		<resources>
+			<resource>
+				<filtering>true</filtering>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>*.properties</include>
+					<include>global-config/</include>
+				</includes>
+			</resource>		
+		</resources>		
 	</build>
-
 
 </project>
