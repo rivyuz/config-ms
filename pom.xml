@@ -103,7 +103,7 @@
 				<directory>src/main/resources</directory>
 				<includes>
 					<include>*.properties</include>
-					<include>global-config/</include>
+					<include>config-properties/</include>
 				</includes>
 			</resource>		
 		</resources>		
